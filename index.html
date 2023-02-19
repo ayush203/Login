@@ -31,35 +31,45 @@
             color: #073984;
             outline: none;
         }
+        ::placeholder{
+            font-weight:500;
+            color: #073984;
+        }
     </style>
-    <title>Document</title>
+    <title>SevaHUB</title>
 </head>
 
 <body>
-    <div class="fixed top-8 left-7 z-50">
+    <div>
+        <i class="fa-solid fa-arrow-left"></i>
+    </div>
+    <div class="fixed top-9 left-8 z-50">
         <a href="/">
-            <Icon name="carbon:arrow-left" class="inline-block">
+            <svg class="text-blue-800 " xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32"><path fill="currentColor" d="m14 26l1.41-1.41L7.83 17H28v-2H7.83l7.58-7.59L14 6L4 16l10 10z"/></svg>
         </a>
     </div>
     <div class="flex justify-center items-center h-screen relative w-full py-6 overflow-x-hidden overflow-y-auto min-h-screen z-10">
         <div class="container">
             <div class="flex justify-center items-center flex-col relative min-w-0 break-words">
                 <div class="p-6">
-                    <div class="px-10 text-center">
-                        <img src="./logo.png" alt="SevaHUB" class="max-h-16 max-w-full h-auto">
+                    <div class="px-16 text-center">
+                        <img src="./logo.png" alt="SevaHUB" class="m-0 max-h-16 max-w-full h-auto">
                     </div>
                     <div class="relative z-10 mt-6">
                         <div class="leading-4 mb-4">
-                            <input type="text" maxlength="10" placeholder="Mobile Number" class="form-control form-control-clicked focus:border-cyan-200">
+                            <input type="text" maxlength="10" placeholder="Registered Mobile Number" class="form-control form-control-clicked focus:border-cyan-200">
                         </div>
                         <div class="leading-4 mb-4 relative">
-                            <input type="password" placeholder="Enter Password" class="form-control form-control-clicked focus:border-cyan-200">
+                            <input type="password" placeholder="New Password" class="form-control form-control-clicked focus:border-cyan-200">
                         </div>
-                        <button type="button" class="w-full cursor-pointer shadow-none text-sm font-medium py-2 px-3.5 rounded-md bg-blue-700 text-white">Sign In</button>
-                    </div>
-                    <div class="text-center mt-8">
-                        <a href="" class="text-black font-normal text-sm block relative underline z-10">Forgot Password?</a>
-                        <p class="mb-0 text-gray-400 text-base w-full">Didn't have an account? <a href="" class="font-normal text-black text-sm underline block relative">Register Now</a></p>
+                        <div class="leading-4 mb-4 relative">
+                            <input type="password" placeholder="Confirm Password" class="form-control form-control-clicked focus:border-cyan-200">
+                        </div>
+                        <div class="mb-1 relative flex flex-wrap items-stretch w-full">
+                            <button type="button" class="py-2 px-2 text-sm text-white shadow-none font-medium bg-blue-700 rounded-l-md">Generate OTP</button>
+                            <input type="text" class="text-center relative px-4 py-2 outline-none rounded-r-md border focus:border-cyan-200" maxlength="4" placeholder="Enter OTP">
+                        </div>
+                        <button type="button" class="w-full mt-12 cursor-pointer shadow-none text-sm font-medium py-2 px-3.5 rounded-md bg-blue-700 text-white">Reset Password</button>
                     </div>
                 </div>
             </div>
