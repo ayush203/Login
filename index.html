@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./input.css">
+    <style>
+        .form-control {
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            border-style: solid;
+            padding: 0.5rem 1rem;
+            height: 41px;
+            max-height: 41px;
+            font-size: 14px;
+            color: #073984;
+            background-color: #ffffff;
+            border-width: 1px;
+            border-color: #ebebeb;
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            font-weight: 400;
+            line-height: 1.5;
+            transition: ease-in-out;
+        }
+
+        .form-control-clicked {
+            color: #073984;
+            outline: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="fixed top-8 left-7 z-50">
+        <a href="/">
+            <Icon name="carbon:arrow-left" class="inline-block">
+        </a>
+    </div>
+    <div class="flex justify-center items-center h-screen relative w-full py-6 overflow-x-hidden overflow-y-auto min-h-screen z-10">
+        <div class="container">
+            <div class="flex justify-center items-center flex-col relative min-w-0 break-words">
+                <div class="p-6">
+                    <div class="px-10 text-center">
+                        <img src="./logo.png" alt="SevaHUB" class="max-h-16 max-w-full h-auto">
+                    </div>
+                    <div class="relative z-10 mt-6">
+                        <div class="leading-4 mb-4">
+                            <input type="text" maxlength="10" placeholder="Mobile Number" class="form-control form-control-clicked focus:border-cyan-200">
+                        </div>
+                        <div class="leading-4 mb-4 relative">
+                            <input type="password" placeholder="Enter Password" class="form-control form-control-clicked focus:border-cyan-200">
+                        </div>
+                        <button type="button" class="w-full cursor-pointer shadow-none text-sm font-medium py-2 px-3.5 rounded-md bg-blue-700 text-white">Sign In</button>
+                    </div>
+                    <div class="text-center mt-8">
+                        <a href="" class="text-black font-normal text-sm block relative underline z-10">Forgot Password?</a>
+                        <p class="mb-0 text-gray-400 text-base w-full">Didn't have an account? <a href="" class="font-normal text-black text-sm underline block relative">Register Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
